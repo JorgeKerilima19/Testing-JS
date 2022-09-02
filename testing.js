@@ -36,5 +36,18 @@ function Slicing(){
         document.write("Error")
     }
 }
+const sliced=(strings="",length=undefined)=>(!strings)? document.write("No input was given"):document.write(strings.slice(0,length))
 /*calling function
-Slicing()*/
+Slicing()
+sliced("Hola CTMR", 3)*/
+
+//With a given string, create a program that return the string as an array with a special
+//character in between
+function StringToArray(){
+    let word=prompt("Give me your word: ");
+    word=word.trim();
+    let separator=prompt("Insert your character: ");;
+    alert("Code Executing....")
+    console.log(word.split(separator));
+}
+StringToArray()
